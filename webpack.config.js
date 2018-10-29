@@ -17,7 +17,7 @@ var config = {
                 include: SRC_DIR,
                 loader: "babel-loader",
                 options: {
-                    presets: ["react", "es2015", "stage-2"]
+                    presets: ["env","react", "react-dom", "es2015", "stage-2"]
                 }
             }
         ]
