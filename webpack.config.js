@@ -13,7 +13,7 @@ var config = {
     module: {
         rules: [
             {
-                test: /\.js?/,
+                test: /\.jsx\?$/,
                 include: SRC_DIR,
                 loader: "babel-loader",
                 options: {
@@ -25,3 +25,22 @@ var config = {
 };
 
 module.exports = config;
+
+// var path = require('path');
+
+// var config = {
+//     entry: './src/app/index.js',
+//     output: {
+//         path: path.resolve(__dirname, 'dist'),
+//         filename: 'bundle.js'
+//     },
+//     module: {
+//         rules: [
+//             { test: /\.jsx\?$/, loader: 'babel-loader', exclude: /node_modules/, options: {
+//                 presets: [ 'react' ]
+//             } }
+//         ]
+//     }
+// };
+
+// module.exports = config;
